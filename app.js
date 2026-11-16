@@ -43,6 +43,69 @@
         { label: 'PDF · стр. 3', href: 'portfolio.pdf#page=3', external: true },
       ],
     },
+    vlada: {
+      tag: 'Production',
+      title: 'Vlada_BROWS',
+      tagline: 'Коммерческая платформа для студии бровей и ресниц: лендинг, запись, OAuth и админ-панель',
+      image: 'assets/vlada-home.png',
+      problem: 'Студии нужен не просто лендинг, а запись, расписание, клиенты, услуги, отзывы и управление контентом.',
+      solution: 'Next.js 15 + tRPC + Prisma + PostgreSQL: публичный сайт, онлайн-запись, OAuth VK/Яндекс, RBAC и админ-панель.',
+      role: 'Full-stack: архитектура, backend, frontend, OAuth, безопасность, тесты и деплой.',
+      metrics: [['20', 'моделей Prisma'], ['361', 'unit-тестов'], ['65', 'e2e-тестов'], ['2', 'OAuth-провайдера']],
+      stack: ['Next.js 15', 'React 19', 'TypeScript', 'tRPC 11', 'Prisma 6', 'PostgreSQL 16', 'Tailwind 4', 'Zod', 'Vitest', 'Playwright', 'Vercel'],
+      highlights: [
+        'OAuth VK и Яндекс с PKCE, state и httpOnly cookies.',
+        'RBAC user / master / admin, GRANT-ONLY через серверный allowlist.',
+        'CSP nonce, CSRF, rate limit, audit log и валидация env через Zod.',
+        'Онлайн-запись, расписание, услуги, отзывы, медиа и админ-панель.',
+        '361 unit + 65 e2e, CI и Husky/lint-staged.',
+      ],
+      note: 'Коммерческий проект: live-версия открыта, код приватный по договорённости.',
+      links: [
+        { label: 'Открыть live ↗', href: 'https://beauty-master-platform.vercel.app', external: true, primary: true },
+        { label: 'GitHub профиль', href: 'https://github.com/Dated-cpu', external: true },
+      ],
+    },
+    bookflow: {
+      tag: 'Backend · SQL',
+      title: 'BookFlow AI',
+      tagline: 'Scheduling SaaS foundation: FastAPI, async SQLAlchemy, PostgreSQL и Clean Architecture',
+      image: 'assets/bookflow-card.svg',
+      problem: 'Нужен масштабируемый backend для записи: доменная логика не должна зависеть от фреймворка, БД и HTTP.',
+      solution: 'Слои domain / application / infrastructure / presentation, repository pattern, async SQLAlchemy, JWT, Alembic и Docker.',
+      role: 'Архитектура, backend, схема БД, auth, тесты и Docker.',
+      metrics: [['FastAPI', 'API'], ['PostgreSQL', 'БД'], ['Clean', 'Architecture'], ['async', 'SQLAlchemy']],
+      stack: ['Python 3.13', 'FastAPI', 'SQLAlchemy 2', 'PostgreSQL', 'Alembic', 'JWT', 'Docker', 'Ruff', 'mypy', 'pytest'],
+      highlights: [
+        'Domain layer без зависимостей от фреймворка и ORM.',
+        'Repository pattern и DI: зависимости направлены внутрь.',
+        'Async SQLAlchemy и миграции Alembic.',
+        'JWT auth, тесты и Docker Compose для локального запуска.',
+      ],
+      links: [
+        { label: 'Открыть GitHub ↗', href: 'https://github.com/Dated-cpu/BookFlow', external: true, primary: true },
+      ],
+    },
+    love: {
+      tag: 'Creative frontend',
+      title: 'Digital Love Experience',
+      tagline: 'Кинематографичный сайт-подарок на Next.js с 3D-галереей и анимациями',
+      image: 'assets/love-card.svg',
+      problem: 'Нужно сделать цифровой подарок, который ощущается как личная история, а не шаблонный лендинг.',
+      solution: 'Next.js + TypeScript + Framer Motion: hero с particles, 3D-галерея, timeline, интерактивные карточки и confetti.',
+      role: 'Идея, дизайн, frontend, анимации и адаптив.',
+      metrics: [['Next.js', 'framework'], ['TS', 'strict'], ['3D', 'gallery'], ['a11y', 'reduced-motion']],
+      stack: ['Next.js', 'React', 'TypeScript', 'Framer Motion', 'CSS', 'Vercel-ready'],
+      highlights: [
+        'Hero с floating particles и анимированным градиентом.',
+        '3D-галерея воспоминаний с tilt-эффектом.',
+        'Timeline и раскрывающиеся карточки.',
+        'Confetti, heart particles и поддержка reduced-motion.',
+      ],
+      links: [
+        { label: 'Открыть GitHub ↗', href: 'https://github.com/Dated-cpu/love-experience', external: true, primary: true },
+      ],
+    },
     bot: {
       tag: 'AI',
       title: 'AI-ассистент',
@@ -103,6 +166,7 @@
       <div class="modal-metrics">${metrics}</div>
       <div class="modal-stack">${stack}</div>
       <ul class="modal-highlights">${highlights}</ul>
+      ${project.note ? `<p class="modal-note">${esc(project.note)}</p>` : ''}
       <div class="modal-links">${links}</div>
     `;
   }

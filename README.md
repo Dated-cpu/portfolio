@@ -31,7 +31,13 @@ landing/
 - Заявки с AI-триажем: https://t.me/zayavka_assist_bot
 - AI-ассистент: https://t.me/danil_agent_ai_bot
 - Живое приложение: https://hansslanda.ru
-- GitHub: https://github.com/Dated-cpu/portfolio
+- Vlada_BROWS (production): https://beauty-master-platform.vercel.app
+- BookFlow AI (backend/SQL): https://github.com/Dated-cpu/BookFlow
+- Digital Love Experience (frontend): https://github.com/Dated-cpu/love-experience
+- BarberPro (booking SaaS): https://github.com/Dated-cpu/barberpro
+- NostalgiaOS (retro games): https://github.com/Dated-cpu/old-game
+- GitHub профиль: https://github.com/Dated-cpu
+- GitHub репозиторий лендинга: https://github.com/Dated-cpu/portfolio
 
 ## Как посмотреть
 
