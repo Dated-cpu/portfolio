@@ -23,6 +23,16 @@ landing/
 └── README.md
 ```
 
+## Ссылки
+
+- Лендинг: https://dated-cpu.github.io/portfolio/
+- PDF: https://dated-cpu.github.io/portfolio/portfolio.pdf
+- AI-видео «Трендыч»: https://t.me/Trendych_bot
+- Заявки с AI-триажем: https://t.me/zayavka_assist_bot
+- AI-ассистент: https://t.me/danil_agent_ai_bot
+- Живое приложение: https://hansslanda.ru
+- GitHub: https://github.com/Dated-cpu/portfolio
+
 ## Как посмотреть
 
 ```bash

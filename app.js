@@ -18,6 +18,7 @@
       ],
       links: [
         { label: 'Открыть приложение ↗', href: 'https://hansslanda.ru', external: true, primary: true },
+        { label: 'Telegram-бот ↗', href: 'https://t.me/Trendych_bot', external: true },
         { label: 'PDF · стр. 2', href: 'portfolio.pdf#page=2', external: true },
       ],
     },
@@ -38,8 +39,8 @@
         'Один webhook на message и callback_query — без конфликта Telegram.',
       ],
       links: [
-        { label: 'PDF · стр. 3', href: 'portfolio.pdf#page=3', external: true, primary: true },
-        { label: 'Демо по запросу', href: 'https://t.me/Danil_Andreeviches', external: true },
+        { label: 'Открыть бота ↗', href: 'https://t.me/zayavka_assist_bot', external: true, primary: true },
+        { label: 'PDF · стр. 3', href: 'portfolio.pdf#page=3', external: true },
       ],
     },
     bot: {
@@ -59,8 +60,8 @@
         'Пустой ответ модели превращается в понятный fallback, а не в молчание.',
       ],
       links: [
-        { label: 'PDF · стр. 4', href: 'portfolio.pdf#page=4', external: true, primary: true },
-        { label: 'Демо по запросу', href: 'https://t.me/Danil_Andreeviches', external: true },
+        { label: 'Открыть бота ↗', href: 'https://t.me/danil_agent_ai_bot', external: true, primary: true },
+        { label: 'PDF · стр. 4', href: 'portfolio.pdf#page=4', external: true },
       ],
     },
   };
