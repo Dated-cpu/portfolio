@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Портфолио Данила Андреевича: AI-автоматизации и продукты на n8n, Telegram, API, SQL и LLM. Три работающих проекта.">
+  <meta name="theme-color" content="#06080f">
+  <title>Данил Андреевич — AI Automation & Full-stack</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="На главную">
+        <span class="brand-mark">Д</span>
+        <span class="brand-text"><b>Данил Андреевич</b><small>AI Automation · Full-stack</small></span>
+      </a>
+      <nav class="nav" aria-label="Навигация">
+        <a href="#projects">Проекты</a>
+        <a href="#stack">Стек</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a class="btn btn-small btn-ghost" href="portfolio.pdf" target="_blank" rel="noreferrer">PDF</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="grid"></span></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="dot"></span> Портфолио · 3 проекта</div>
+          <h1>AI, API и данные <span class="grad">в работающих</span> продуктах</h1>
+          <p class="lead">
+            Telegram Mini App с оплатой, автоматизация заявок с SLA и мультимодальный
+            ассистент. n8n, SQL, FastAPI, React — от процесса до продакшена.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Смотреть проекты <span aria-hidden="true">↓</span></a>
+            <a class="btn btn-ghost" href="portfolio.pdf" target="_blank" rel="noreferrer">Скачать PDF</a>
+          </div>
+          <div class="hero-links">
+            <a href="https://t.me/Danil_Andreeviches" target="_blank" rel="noreferrer">Telegram <span>@Danil_Andreeviches</span></a>
+            <a href="mailto:admin@hansslanda.ru">Email <span>admin@hansslanda.ru</span></a>
+          </div>
+          <div class="hero-stats">
+            <div><b data-count="3">3</b><span>проекта</span></div>
+            <div><b data-count="5">5</b><span>n8n workflow</span></div>
+            <div><b data-count="23">23</b><span>REST endpoint</span></div>
+            <div><b data-count="9">9</b><span>таблиц в БД</span></div>
+          </div>
+        </div>
+
+        <div class="collage" aria-label="Превью проектов">
+          <button class="collage-item collage-main" type="button" data-project="trendych">
+            <img src="assets/aitrend-app.svg" alt="Telegram Mini App Трендыч">
+            <span class="collage-label"><b>Трендыч</b><small>AI-видео в Telegram</small></span>
+          </button>
+          <button class="collage-item" type="button" data-project="request-desk">
+            <img src="assets/request-desk-card.svg" alt="Карточка заявки AI Request Desk">
+            <span class="collage-label"><b>AI Request Desk</b><small>заявки с SLA</small></span>
+          </button>
+          <button class="collage-item" type="button" data-project="bot">
+            <img src="assets/telegram-bot-chat.svg" alt="Мультимодальный AI-ассистент">
+            <span class="collage-label"><b>AI-ассистент</b><small>текст · голос · фото</small></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap section-head">
+        <div class="eyebrow"><span class="dot"></span> Проекты</div>
+        <h2>Три системы, которые уже работают</h2>
+        <p class="section-lead">Коротко о каждом. Подробности, стек и ссылки — внутри карточки.</p>
+      </div>
+
+      <div class="wrap filters" role="tablist" aria-label="Фильтр проектов">
+        <button class="filter is-active" type="button" data-filter="all" role="tab" aria-selected="true">Все</button>
+        <button class="filter" type="button" data-filter="product" role="tab" aria-selected="false">Продукт</button>
+        <button class="filter" type="button" data-filter="automation" role="tab" aria-selected="false">Автоматизация</button>
+        <button class="filter" type="button" data-filter="ai" role="tab" aria-selected="false">AI</button>
+      </div>
+
+      <div class="wrap project-list">
+        <article class="project" data-project="trendych" data-tags="product" tabindex="0">
+          <div class="project-visual"><img src="assets/aitrend-app.svg" alt="Трендыч — Telegram Mini App"></div>
+          <div class="project-main">
+            <div class="project-top"><span class="project-tag">Продукт</span><span class="project-num">01</span></div>
+            <h3>Трендыч</h3>
+            <p class="project-sub">Telegram Mini App для AI-видео 9:16</p>
+            <p class="project-desc">Каталог шаблонов, загрузка фото, оплата Stars, очередь генерации и результат. 23 REST endpoint и 9 таблиц.</p>
+            <div class="project-metrics"><span><b>23</b> endpoint</span><span><b>9</b> таблиц</span><span><b>live</b> Stars</span></div>
+            <div class="project-footer">
+              <div class="stack"><span>React 19</span><span>FastAPI</span><span>SQLAlchemy</span><span>n8n</span></div>
+              <div class="project-actions">
+                <button class="btn btn-small btn-primary" type="button" data-open="trendych">Подробнее</button>
+                <a class="btn btn-small btn-ghost" href="https://hansslanda.ru" target="_blank" rel="noreferrer">Открыть ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project="request-desk" data-tags="automation" tabindex="0">
+          <div class="project-visual"><img src="assets/request-desk-card.svg" alt="AI Request Desk — карточка заявки"></div>
+          <div class="project-main">
+            <div class="project-top"><span class="project-tag">Автоматизация</span><span class="project-num">02</span></div>
+            <h3>AI Request Desk</h3>
+            <p class="project-sub">Заявки из Telegram с AI-триажем и SLA</p>
+            <p class="project-desc">LLM определяет категорию и приоритет, PostgreSQL хранит SLA и стоимость, менеджер получает карточку с кнопками.</p>
+            <div class="project-metrics"><span><b>26</b> нод n8n</span><span><b>12/12</b> тест</span><span><b>$0.036</b> / 1000</span></div>
+            <div class="project-footer">
+              <div class="stack"><span>n8n</span><span>Telegram</span><span>OpenRouter</span><span>PostgreSQL</span></div>
+              <div class="project-actions">
+                <button class="btn btn-small btn-primary" type="button" data-open="request-desk">Подробнее</button>
+                <a class="btn btn-small btn-ghost" href="portfolio.pdf#page=3" target="_blank" rel="noreferrer">PDF · стр. 3</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project="bot" data-tags="ai" tabindex="0">
+          <div class="project-visual"><img src="assets/telegram-bot-chat.svg" alt="AI-ассистент в Telegram"></div>
+          <div class="project-main">
+            <div class="project-top"><span class="project-tag">AI</span><span class="project-num">03</span></div>
+            <h3>AI-ассистент</h3>
+            <p class="project-sub">Мультимодальный бот: текст, голос, фото, /image</p>
+            <p class="project-desc">Один webhook, Switch по типу сообщения и разные модели под задачу. Понятные fallback-ответы вместо тишины.</p>
+            <div class="project-metrics"><span><b>25</b> нод n8n</span><span><b>4</b> режима</span><span><b>3</b> модели</span></div>
+            <div class="project-footer">
+              <div class="stack"><span>n8n</span><span>OpenRouter</span><span>qwen</span><span>Gemini</span></div>
+              <div class="project-actions">
+                <button class="btn btn-small btn-primary" type="button" data-open="bot">Подробнее</button>
+                <a class="btn btn-small btn-ghost" href="portfolio.pdf#page=4" target="_blank" rel="noreferrer">PDF · стр. 4</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="stack">
+      <div class="wrap section-head">
+        <div class="eyebrow"><span class="dot"></span> Стек</div>
+        <h2>Рабочие связки, а не список библиотек</h2>
+      </div>
+      <div class="wrap skills">
+        <div class="skill"><b>n8n</b><span>Webhook, Switch, Code, HTTP, Postgres, callbacks</span></div>
+        <div class="skill"><b>API</b><span>FastAPI, Pydantic, REST, webhooks, HMAC, uploads</span></div>
+        <div class="skill"><b>SQL / DB</b><span>PostgreSQL, SQLite, SQLAlchemy, enum, indexes, views</span></div>
+        <div class="skill"><b>AI / LLM</b><span>OpenRouter, JSON schema, multimodal, fallback, cost</span></div>
+        <div class="skill"><b>Frontend</b><span>React 19, TypeScript, Vite, Telegram Mini Apps</span></div>
+        <div class="skill"><b>Infra</b><span>Docker, Caddy, HTTPS, VPS, backups, secrets</span></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="wrap contact-card">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Контакты</div>
+          <h2>Нужен человек, который соберёт процесс от идеи до продакшена?</h2>
+          <p>Открыт к ролям AI Automation Engineer, n8n-разработчика, Full-stack (Python / React) и интегратора. Удалённо.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://t.me/Danil_Andreeviches" target="_blank" rel="noreferrer">Написать в Telegram</a>
+          <a class="btn btn-ghost" href="mailto:admin@hansslanda.ru">admin@hansslanda.ru</a>
+          <button class="btn btn-ghost" type="button" data-copy="admin@hansslanda.ru">Скопировать email</button>
+          <a class="btn btn-ghost" href="portfolio.pdf" target="_blank" rel="noreferrer">Открыть PDF</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner"><span>Данил Андреевич · 2026</span><span>HTML/CSS · без конструкторов</span></div>
+  </footer>
+
+  <dialog class="modal" id="project-modal" aria-label="Подробности проекта">
+    <div class="modal-shell">
+      <button class="modal-close" type="button" data-close aria-label="Закрыть">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
