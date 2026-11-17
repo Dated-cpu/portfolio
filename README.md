@@ -29,6 +29,10 @@
 - Без неоновых градиентов, зелёных точек и «AI-карточек»: тонкие линии,
   крупные номера, редакционная сетка и ночная сцена в hero.
 
+## Скачать пакет
+
+Все файлы одним архивом: [ai-automation-package.zip](downloads/ai-automation-package.zip)
+
 ## Ссылки
 
 - Лендинг: https://dated-cpu.github.io/portfolio/
