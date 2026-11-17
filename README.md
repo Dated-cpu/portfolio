@@ -4,24 +4,30 @@
 
 ![Превью](preview-hero.png)
 
-Компактная версия портфолио: hero, три проекта, фильтры, модальные окна с деталями,
-стек и контакты. Один экран — быстрый обзор, клик по проекту — подробности и ссылки.
+Компактная версия портфолио в кинематографичной ночной эстетике: крупная антиква,
+тёплый свет, главы вместо обычных секций и модальные окна с деталями проектов.
 
-## Файлы
+## Главы
 
-```text
-landing/
-├── index.html          # лендинг
-├── styles.css          # дизайн, адаптив, модалка
-├── app.js              # данные проектов, фильтры, модалки, копирование email
-├── portfolio.pdf       # подробное портфолио на 6 страниц
-├── assets/             # локальные SVG-превью
-├── preview-hero.png
-├── preview-projects.png
-├── preview-modal.png
-├── preview-mobile.png
-└── README.md
-```
+- **01 · Сцены** — три основных кейса.
+- **02 · Архив** — Vlada_BROWS, BookFlow AI, BarberPro.
+- **03 · Ремесло** — стек и рабочие связки.
+- **04 · Послесвечение** — контакты.
+
+## Что интерактивного
+
+- Клик по проекту открывает модалку с проблемой, решением, ролью, метриками и стеком.
+- Фиксированный указатель глав подсвечивает текущую секцию при скролле.
+- Кнопка копирования email с toast-уведомлением.
+- Анимированные счётчики и плавные переходы.
+- Адаптив под мобильные.
+
+## Дизайн
+
+- Палитра: глубокий ночной синий, кремовый текст, тёплый янтарный акцент.
+- Шрифты: Cormorant Garamond для заголовков, Manrope для текста.
+- Без неоновых градиентов, зелёных точек и «AI-карточек»: тонкие линии,
+  крупные номера, редакционная сетка и ночная сцена в hero.
 
 ## Ссылки
 
@@ -33,7 +39,6 @@ landing/
 - Живое приложение: https://hansslanda.ru
 - Vlada_BROWS (production): https://beauty-master-platform.vercel.app
 - BookFlow AI (backend/SQL): https://github.com/Dated-cpu/BookFlow
-- Digital Love Experience (frontend): https://github.com/Dated-cpu/love-experience
 - BarberPro (booking SaaS): https://github.com/Dated-cpu/barberpro
 - NostalgiaOS (retro games): https://github.com/Dated-cpu/old-game
 - GitHub профиль: https://github.com/Dated-cpu

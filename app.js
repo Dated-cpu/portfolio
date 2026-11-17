@@ -86,24 +86,26 @@
         { label: 'Открыть GitHub ↗', href: 'https://github.com/Dated-cpu/BookFlow', external: true, primary: true },
       ],
     },
-    love: {
-      tag: 'Creative frontend',
-      title: 'Digital Love Experience',
-      tagline: 'Кинематографичный сайт-подарок на Next.js с 3D-галереей и анимациями',
-      image: 'assets/love-card.svg',
-      problem: 'Нужно сделать цифровой подарок, который ощущается как личная история, а не шаблонный лендинг.',
-      solution: 'Next.js + TypeScript + Framer Motion: hero с particles, 3D-галерея, timeline, интерактивные карточки и confetti.',
-      role: 'Идея, дизайн, frontend, анимации и адаптив.',
-      metrics: [['Next.js', 'framework'], ['TS', 'strict'], ['3D', 'gallery'], ['a11y', 'reduced-motion']],
-      stack: ['Next.js', 'React', 'TypeScript', 'Framer Motion', 'CSS', 'Vercel-ready'],
+    barberpro: {
+      tag: 'Full-stack · SaaS',
+      title: 'BarberPro',
+      tagline: 'Платформа онлайн-записи для барбершопа: слоты, расписание, кабинеты и уведомления',
+      image: 'assets/barberpro.png',
+      problem: 'Барбершопу нужна запись 24/7, расписание, клиенты и уведомления без ручной координации.',
+      solution: 'Next.js 15 + tRPC + Prisma + PostgreSQL + Redis/BullMQ: публичный сайт, booking engine, кабинеты и админка.',
+      role: 'Архитектура, backend, frontend, booking engine, очереди и безопасность.',
+      metrics: [['Next.js 15', 'frontend'], ['tRPC', 'API'], ['Prisma', 'ORM'], ['BullMQ', 'queues']],
+      stack: ['Next.js 15', 'React 19', 'TypeScript', 'tRPC', 'Prisma', 'PostgreSQL', 'Redis', 'BullMQ', 'Tailwind', 'R3F', 'Vercel'],
       highlights: [
-        'Hero с floating particles и анимированным градиентом.',
-        '3D-галерея воспоминаний с tilt-эффектом.',
-        'Timeline и раскрывающиеся карточки.',
-        'Confetti, heart particles и поддержка reduced-motion.',
+        'Генерация слотов с учётом длительности, обедов, блокировок и timezone.',
+        'Transactional outbox + BullMQ для email, Telegram и push.',
+        'Кабинеты клиента и барбера, админ-панель и управление расписанием.',
+        'JWT, bcrypt, CSRF, rate limit и security-заголовки.',
       ],
+      note: 'Прототип с production-oriented архитектурой: live-версия открыта, код на GitHub.',
       links: [
-        { label: 'Открыть GitHub ↗', href: 'https://github.com/Dated-cpu/love-experience', external: true, primary: true },
+        { label: 'Открыть live ↗', href: 'https://web-khaki-beta-29.vercel.app', external: true, primary: true },
+        { label: 'GitHub ↗', href: 'https://github.com/Dated-cpu/barberpro', external: true },
       ],
     },
     bot: {
@@ -321,4 +323,22 @@
       showToast(ok ? 'Email скопирован' : text);
     });
   });
+
+  const chapterLinks = [...document.querySelectorAll('.chapter-rail a')];
+  if (chapterLinks.length) {
+    const chapterSections = chapterLinks
+      .map((link) => document.querySelector(link.getAttribute('href')))
+      .filter(Boolean);
+    const setActive = (id) => {
+      chapterLinks.forEach((link) => {
+        link.classList.toggle('is-active', link.getAttribute('href') === `#${id}`);
+      });
+    };
+    const chapterObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) setActive(entry.target.id);
+      });
+    }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
+    chapterSections.forEach((section) => chapterObserver.observe(section));
+  }
 })();

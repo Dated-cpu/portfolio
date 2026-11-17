@@ -3,10 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Портфолио Данила Андреевича: AI-автоматизации и продукты на n8n, Telegram, API, SQL и LLM. Три работающих проекта.">
-  <meta name="theme-color" content="#06080f">
+  <meta name="description" content="Портфолио Данила Андреевича: AI-автоматизации и продукты на n8n, Telegram, API, SQL и LLM. Шесть работающих проектов.">
+  <meta name="theme-color" content="#080b10">
   <title>Данил Андреевич — AI Automation & Full-stack</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,27 +20,35 @@
         <span class="brand-text"><b>Данил Андреевич</b><small>AI Automation · Full-stack</small></span>
       </a>
       <nav class="nav" aria-label="Навигация">
-        <a href="#projects">Проекты</a>
-        <a href="#stack">Стек</a>
-        <a href="#contact">Контакты</a>
+        <a href="#projects">Сцены</a>
+        <a href="#more">Архив</a>
+        <a href="#stack">Ремесло</a>
+        <a href="#contact">Контакт</a>
       </nav>
       <a class="btn btn-small btn-ghost" href="portfolio.pdf" target="_blank" rel="noreferrer">PDF</a>
     </div>
   </header>
 
+  <aside class="chapter-rail" aria-label="Главы">
+    <a href="#projects" data-chapter="projects"><span>01</span> Сцены</a>
+    <a href="#more" data-chapter="more"><span>02</span> Архив</a>
+    <a href="#stack" data-chapter="stack"><span>03</span> Ремесло</a>
+    <a href="#contact" data-chapter="contact"><span>04</span> Контакт</a>
+  </aside>
+
   <main id="top">
     <section class="hero">
-      <div class="hero-bg" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="grid"></span></div>
+      <div class="hero-glow" aria-hidden="true"></div>
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow"><span class="dot"></span> Портфолио · 6 проектов</div>
-          <h1>AI, API и данные <span class="grad">в работающих</span> продуктах</h1>
+          <div class="eyebrow">Портфолио · 2026</div>
+          <h1>Собираю системы,<br>которые <em>убирают</em><br>ручную работу</h1>
           <p class="lead">
-            Telegram Mini App с оплатой, автоматизация заявок с SLA и мультимодальный
-            ассистент. n8n, SQL, FastAPI, React — от процесса до продакшена.
+            n8n, Telegram, API, SQL и LLM. Соединяю процесс, данные и модели так,
+            чтобы это работало в продакшене, а не только в демо.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">Смотреть проекты <span aria-hidden="true">↓</span></a>
+            <a class="btn btn-primary" href="#projects">Смотреть сцены</a>
             <a class="btn btn-ghost" href="portfolio.pdf" target="_blank" rel="noreferrer">Скачать PDF</a>
           </div>
           <div class="hero-links">
@@ -51,40 +62,26 @@
             <div><b data-count="9">9</b><span>таблиц в БД</span></div>
           </div>
         </div>
-
-        <div class="collage" aria-label="Превью проектов">
-          <button class="collage-item collage-main" type="button" data-project="trendych">
-            <img src="assets/aitrend-app.svg" alt="Telegram Mini App Трендыч">
-            <span class="collage-label"><b>Трендыч</b><small>AI-видео в Telegram</small></span>
-          </button>
-          <button class="collage-item" type="button" data-project="request-desk">
-            <img src="assets/request-desk-card.svg" alt="Карточка заявки AI Request Desk">
-            <span class="collage-label"><b>AI Request Desk</b><small>заявки с SLA</small></span>
-          </button>
-          <button class="collage-item" type="button" data-project="bot">
-            <img src="assets/telegram-bot-chat.svg" alt="Мультимодальный AI-ассистент">
-            <span class="collage-label"><b>AI-ассистент</b><small>текст · голос · фото</small></span>
-          </button>
+        <div class="hero-visual">
+          <img src="assets/night-scene.svg" alt="Ночная архитектура: тёплый свет, луна и дождь">
+          <div class="scroll-cue"><span></span> SCROLL</div>
         </div>
       </div>
     </section>
 
     <section class="section" id="projects">
       <div class="wrap section-head">
-        <div class="eyebrow"><span class="dot"></span> Проекты</div>
-        <h2>Три системы, которые уже работают</h2>
-        <p class="section-lead">Коротко о каждом. Подробности, стек и ссылки — внутри карточки.</p>
-      </div>
-
-      <div class="wrap filters" role="tablist" aria-label="Фильтр проектов">
-        <button class="filter is-active" type="button" data-filter="all" role="tab" aria-selected="true">Все</button>
-        <button class="filter" type="button" data-filter="product" role="tab" aria-selected="false">Продукт</button>
-        <button class="filter" type="button" data-filter="automation" role="tab" aria-selected="false">Автоматизация</button>
-        <button class="filter" type="button" data-filter="ai" role="tab" aria-selected="false">AI</button>
+        <div class="eyebrow">01 · Сцены</div>
+        <h2>Три системы, <em>которые уже работают</em></h2>
+        <p class="section-lead">
+          Не учебные примеры: продуктовый Mini App с оплатой, автоматизация заявок
+          с SLA и мультимодальный ассистент. В каждом — данные, интеграции и
+          обработка ошибок.
+        </p>
       </div>
 
       <div class="wrap project-list">
-        <article class="project" data-project="trendych" data-tags="product" tabindex="0">
+        <article class="project" data-project="trendych" tabindex="0">
           <div class="project-visual"><img src="assets/aitrend-app.svg" alt="Трендыч — Telegram Mini App"></div>
           <div class="project-main">
             <div class="project-top"><span class="project-tag">Продукт</span><span class="project-num">01</span></div>
@@ -103,7 +100,7 @@
           </div>
         </article>
 
-        <article class="project" data-project="request-desk" data-tags="automation" tabindex="0">
+        <article class="project" data-project="request-desk" tabindex="0">
           <div class="project-visual"><img src="assets/request-desk-card.svg" alt="AI Request Desk — карточка заявки"></div>
           <div class="project-main">
             <div class="project-top"><span class="project-tag">Автоматизация</span><span class="project-num">02</span></div>
@@ -122,7 +119,7 @@
           </div>
         </article>
 
-        <article class="project" data-project="bot" data-tags="ai" tabindex="0">
+        <article class="project" data-project="bot" tabindex="0">
           <div class="project-visual"><img src="assets/telegram-bot-chat.svg" alt="AI-ассистент в Telegram"></div>
           <div class="project-main">
             <div class="project-top"><span class="project-tag">AI</span><span class="project-num">03</span></div>
@@ -152,11 +149,11 @@
       </div>
     </section>
 
-    <section class="section more-section" id="more">
+    <section class="section" id="more">
       <div class="wrap section-head">
-        <div class="eyebrow"><span class="dot"></span> Ещё проекты</div>
-        <h2>Больше работы: от продакшена до экспериментов</h2>
-        <p class="section-lead">Коммерческая платформа, backend-фундамент и креативный фронтенд.</p>
+        <div class="eyebrow">02 · Архив</div>
+        <h2>Ещё проекты, <em>которые стоит увидеть</em></h2>
+        <p class="section-lead">Коммерческая платформа, backend-фундамент и booking SaaS.</p>
       </div>
 
       <div class="wrap more-grid">
@@ -189,14 +186,15 @@
         </article>
 
         <article class="more-card">
-          <div class="more-cover"><img src="assets/love-card.svg" alt="Digital Love Experience — creative frontend"></div>
+          <div class="more-cover"><img src="assets/barberpro.png" alt="BarberPro — booking SaaS"></div>
           <div class="more-body">
-            <span class="project-tag">Creative frontend</span>
-            <h3>Digital Love Experience</h3>
-            <p>Кинематографичный сайт-подарок: Next.js, 3D-галерея, timeline, particles, confetti и reduced-motion.</p>
+            <span class="project-tag">Full-stack · SaaS</span>
+            <h3>BarberPro</h3>
+            <p>Платформа онлайн-записи для барбершопа: слоты, расписание, кабинеты, outbox и очереди уведомлений.</p>
             <div class="more-actions">
-              <a class="btn btn-small btn-primary" href="https://github.com/Dated-cpu/love-experience" target="_blank" rel="noreferrer">GitHub ↗</a>
-              <button class="btn btn-small btn-ghost" type="button" data-open="love">Подробнее</button>
+              <a class="btn btn-small btn-primary" href="https://web-khaki-beta-29.vercel.app" target="_blank" rel="noreferrer">Live ↗</a>
+              <a class="btn btn-small btn-ghost" href="https://github.com/Dated-cpu/barberpro" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <button class="btn btn-small btn-ghost" type="button" data-open="barberpro">Подробнее</button>
             </div>
           </div>
         </article>
@@ -204,16 +202,16 @@
 
       <div class="wrap quick-links">
         <span class="quick-label">Ещё на GitHub</span>
-        <a href="https://github.com/Dated-cpu/barberpro" target="_blank" rel="noreferrer">BarberPro <small>booking SaaS</small></a>
         <a href="https://github.com/Dated-cpu/old-game" target="_blank" rel="noreferrer">NostalgiaOS <small>retro games</small></a>
         <a href="https://github.com/Dated-cpu" target="_blank" rel="noreferrer">Все репозитории <small>GitHub</small></a>
       </div>
     </section>
 
-    <section class="section section-alt" id="stack">
+    <section class="section" id="stack">
       <div class="wrap section-head">
-        <div class="eyebrow"><span class="dot"></span> Стек</div>
-        <h2>Рабочие связки, а не список библиотек</h2>
+        <div class="eyebrow">03 · Ремесло</div>
+        <h2>Материалы, <em>с которыми я работаю</em></h2>
+        <p class="section-lead">Не список библиотек, а рабочие связки: от схемы данных и API до интерфейса и деплоя.</p>
       </div>
       <div class="wrap skills">
         <div class="skill"><b>n8n</b><span>Webhook, Switch, Code, HTTP, Postgres, callbacks</span></div>
@@ -228,7 +226,7 @@
     <section class="section contact-section" id="contact">
       <div class="wrap contact-card">
         <div>
-          <div class="eyebrow"><span class="dot"></span> Контакты</div>
+          <div class="eyebrow">04 · Послесвечение</div>
           <h2>Нужен человек, который соберёт процесс от идеи до продакшена?</h2>
           <p>Открыт к ролям AI Automation Engineer, n8n-разработчика, Full-stack (Python / React) и интегратора. Удалённо.</p>
         </div>
@@ -236,7 +234,7 @@
           <a class="btn btn-primary" href="https://t.me/Danil_Andreeviches" target="_blank" rel="noreferrer">Написать в Telegram</a>
           <a class="btn btn-ghost" href="mailto:golovin_da@icloud.com">golovin_da@icloud.com</a>
           <button class="btn btn-ghost" type="button" data-copy="golovin_da@icloud.com">Скопировать email</button>
-          <a class="btn btn-ghost" href="https://github.com/Dated-cpu/portfolio" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn btn-ghost" href="https://github.com/Dated-cpu" target="_blank" rel="noreferrer">GitHub</a>
           <a class="btn btn-ghost" href="portfolio.pdf" target="_blank" rel="noreferrer">Открыть PDF</a>
         </div>
       </div>
@@ -244,7 +242,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-inner"><span>Данил Андреевич · 2026</span><span>HTML/CSS · без конструкторов</span></div>
+    <div class="wrap footer-inner"><span>Данил Андреевич · 2026</span><span>Собрано вручную · HTML/CSS</span></div>
   </footer>
 
   <dialog class="modal" id="project-modal" aria-label="Подробности проекта">
